@@ -1,0 +1,126 @@
+body {
+
+    background-image: url('../img/stealth.png');
+  
+    background-repeat:repeat-x;
+  
+  
+  }
+  
+  
+  
+  #start{
+  
+ 
+  
+  Width:auto;
+  
+  display: block;
+  
+  margin-left: auto;
+  
+  Margin-top: auto;
+  
+  Margin-bottom: auto;
+  
+  margin-right: auto;
+  
+  width: 50%;
+  
+  }
+  
+  #sonic {
+  
+  Display:none;
+  
+  Margin-left :1px;
+  
+  Margin-top:20vh;
+  
+   Height:10vh;
+  
+  Width:auto;
+  
+  }
+  
+  
+  
+  #knuckles{
+  
+  Display:none;
+  
+  Margin-left :1px;
+  
+  Margin-top:20vh;
+  
+   Height:10vh;
+  
+  Width:auto;
+  
+  }
+  
+  #eggman {
+  
+  Display:none;
+  
+  Margin-left :1px;
+  
+  Margin-top:20vh;
+  
+   Height:10vh;
+  
+  Width:auto;
+  
+  }
+  
+  
+  
+  Button{
+  
+  Display:none;
+  
+  Margin-left: auto;
+  
+  Margin-right: auto;
+  
+  Width:20vw;
+  
+  Height :15vh;
+  
+  }
+  
+  @media(Max-width:721px){
+  
+  Button{
+  
+  Display:block;
+  
+  }
+  
+  
+  
+  #sonic{
+  
+  Height:5vh;
+  
+  Width:auto;
+  
+  }
+  
+  #eggman{
+  
+  Height:5vh;
+  
+  Width:auto;
+  
+  }
+  
+  #knucles{
+  
+  Height:5vh;
+  
+  Width:auto;
+  
+  }
+  
+  }

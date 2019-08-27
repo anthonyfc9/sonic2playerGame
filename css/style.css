@@ -4,7 +4,9 @@ body {
   
     background-repeat:repeat-x;
   
-  
+  height: 100%;
+  background-size: cover;
+  background-position: center;
   }
   
   
@@ -15,8 +17,8 @@ body {
   
   Width:auto;
   
-  display: block;
-  
+ display: block; 
+  /* opacity: 1; */
   margin-left: auto;
   
   Margin-top: auto;
@@ -33,7 +35,7 @@ body {
   
   Display:none;
   
-  Margin-left :1px;
+  Margin-left :1vw;
   
   Margin-top:20vh;
   
@@ -49,7 +51,7 @@ body {
   
   Display:none;
   
-  Margin-left :1px;
+  Margin-left :1vw;
   
   Margin-top:20vh;
   
@@ -63,7 +65,7 @@ body {
   
   Display:none;
   
-  Margin-left :1px;
+  Margin-left :1vw;
   
   Margin-top:20vh;
   

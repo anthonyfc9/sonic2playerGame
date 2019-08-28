@@ -3,8 +3,6 @@ body {
     background-image: url('../img/stealth.png');
   
     background-repeat:repeat-x;
-  
-  height: 100%;
   background-size: cover;
   background-position: center;
   }
@@ -37,9 +35,9 @@ body {
   
   Margin-left :1vw;
   
-  Margin-top:20vh;
+  Margin-top:10vh;
   
-   Height:10vh;
+   Height:15vh;
   
   Width:auto;
   
@@ -53,9 +51,9 @@ body {
   
   Margin-left :1vw;
   
-  Margin-top:20vh;
+  Margin-top:10vh;
   
-   Height:10vh;
+   Height:15vh;
   
   Width:auto;
   
@@ -67,60 +65,56 @@ body {
   
   Margin-left :1vw;
   
-  Margin-top:20vh;
+  Margin-top:10vh;
   
-   Height:10vh;
+   Height:15vh;
   
   Width:auto;
   
   }
+  button{
+  display: none;
   
+  Margin-left: 50vw;
+      
+  Margin-right:50vw;
   
+  Width:10vw;
+ background-color: white;
+  Height :10vh;
+      }
+
+      @media only screen and (min-device-width : 320px) and (max-device-width : 820px){
   
-  Button{
-  
-  Display:none;
-  
-  Margin-left: auto;
-  
-  Margin-right: auto;
-  
-  Width:20vw;
-  
-  Height :15vh;
-  
-  }
-  
-  @media(Max-width:721px){
-  
-  Button{
-  
-  Display:block;
-  
-  }
-  
-  
+    button{
+      display: block;
+      Margin-left: 50vw;
+      
+      Margin-right:50vw;
+      
+      Width:10vw;
+     background-color: white;
+      Height :10vh;
+}
   
   #sonic{
   
-  Height:5vh;
-  
+  margin-top: 5vh;
   Width:auto;
   
   }
   
   #eggman{
   
-  Height:5vh;
-  
+
+  margin-top: 5vh;
   Width:auto;
   
   }
   
-  #knucles{
+  #knuckles{
   
-  Height:5vh;
-  
+  margin-top: 5vh;
   Width:auto;
   
   }

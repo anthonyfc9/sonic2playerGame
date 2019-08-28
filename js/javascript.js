@@ -15,75 +15,72 @@ eggman2.style.display= "block";
 sonic2.style.display= "block";
 knuckles2.style.display= 'block';
 
+eggmanMove()
+       
 }
 
-// const addOne =()=>{
 
-// eggmanPos++;
 
-// eggman2.style.marginleft= eggmanPos+'vw';
+const sonic=()=>{ if(sonic2.style.display=='block'){
+    sonicPos+=3;sonic2.style.marginLeft= sonicPos+'vw' ; if (sonicPos>=100){
+    if (confirm("Sonic has won the race!!")){location.reload();}
+    }}}
+    
+    
+    const knuckles=()=>{if(knuckles2.style.display=='block'){
+         knucklesPos+=3;knuckles2.style.marginLeft= knucklesPos+'vw' ;if (knucklesPos>=100)
+    {if (confirm("Knuckles has won the game!!")){location.reload();}
+    }}}
 
-// if(eggmanPos==100 && sonicPos <100 && knucklesPos <100){if (confirm('you both let eggman get away!!!)')){location.reload();}}
 
-// }
 
-// for(i=1;i<=100;i ++){
+const addOne =()=>{
+eggmanPos+=1;
 
-// window.setInterval(addOne(), 500);
+eggman2.style.marginLeft= eggmanPos+'vw';
 
-// }
+if(eggmanPos>=100 && sonicPos <100 && knucklesPos <100){
+    if (confirm('you both let eggman get away!!!)')){
+        location.reload();
+    }
+}
+
+}
+
+
 
 
 
 
 document.addEventListener('keydown',()=>{
+        if(sonic2.style.display=='block'){
+            if(event.keyCode==83){
+                sonicPos+=3;
+                sonic2.style.marginLeft= sonicPos+'vw' ;
+                    if (sonicPos>=100){
 
-    if(event.keyCode==83){
-console.log('oof')
-sonicPos+=1;
-
-sonic2.style.marginLeft= sonicPos+'vw' ;
-
-if (sonicPos==100){
-
-if (confirm("Sonic has won the race!!")){location.reload();}
-
-}
-
-    }})
-
-
-
-
-// const knuckles =()=>{
-
-
-
-// knucklesPos+=1;
-
-// knuckles2.style.marginLeft= knucklesPos+'vw' ;
-
-// if (knucklesPos==100){
-
-// if (confirm("Knuckles has won the game!!")){location.reload();}
-
-// }
-
-// }
+                            if (confirm("Sonic has won the race!!")){location.reload();}
+                  }
+           }
+        }
+})
 
 
 document.addEventListener('keydown',()=>{
 
-
+if(knuckles2.style.display=='block'){
     if(event.keyCode==75){
-    knucklesPos+=1;
+    knucklesPos+=3;
     
     knuckles2.style.marginLeft= knucklesPos+'vw' ;
     
-    if (knucklesPos==100){
+    if (knucklesPos>=100){
     
     if (confirm("Knuckles has won the game!!")){location.reload();}
     
     }
     
-        }})
+ }}})
+
+eggmanMove=()=>{    window.setInterval(addOne, 100);}
+
